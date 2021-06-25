@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   #let user create a new todo
 
-  get "/todos/create" , to: "todos#create"
+  post "/todos/create" , to: "todos#create"
   get "todos/:id", to: "todos#show"
 
 
