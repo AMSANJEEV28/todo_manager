@@ -21,7 +21,7 @@ skip_before_action :verify_authenticity_token
       )
 
       
-      response_text = " Hey, your new todo is created with the id #{new_todo.id}"
+      response_text = " Hey, here's your new todo #{new_todo} with the id #{new_todo.id}"
       render plain: response_text
   end
 
@@ -31,6 +31,6 @@ skip_before_action :verify_authenticity_token
     todo = Todo.find(id)
     todo.completed = completed
     todo.save!
-    render plain: "Updated todo completed status to #{completed}"
+    render plain: "Updated todo's completed status to #{completed}"
   end
 end
