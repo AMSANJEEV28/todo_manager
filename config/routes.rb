@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
-  get "todos", to: "todos#index"
+
+  resources :todos
   
-  #let user create a new todo
-
-  post "/todos/create" , to: "todos#create"
-  get "todos/:id", to: "todos#show"
-
-
 end
