@@ -2,13 +2,13 @@ class UsersController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    render plain: User.all.map { |user| user.to_UserList }.join("\n")
+    render plain: User.all.map { |user| user.to_user_list }.join("\n")
   end
 
   def show
     id = params[:id]
     users = User.find(id)
-    render plain: users.to_UserList
+    render plain: users.to_user_list
   end
 
   def create
