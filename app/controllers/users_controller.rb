@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     email = params[:email]
     password = params[:password]
     new_user = User.create!(
-      name: name,
+      user: name,
       email: email,
       password: password,
     )
@@ -26,7 +26,7 @@ class UsersController < ApplicationController
   def login
     email = params[:email]
     password = params[:password]
-    is_login = User.where(email: email, password: password).exists? ? true : false
+    is_login = User.where(email: email, password: password).exists?
     render plain: is_login
   end
 end
