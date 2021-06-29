@@ -6,43 +6,36 @@ Typography Scale
 20px
 16px
 */
-body{
-    font-family: sans-serif;
-    max-width: 600px;
-    margin-top: 32px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
-h1 {
+.todo_page_title {
   font-size: 48px;
   line-height: 1.8;
   color: #453c52;
 }
 
-h2 {
+.todo_section_title {
   font-size: 34px;
   line-height: 1.4;
   color: #453c52;
-
 }
-h3{
-    font-size: 24px;
-    line-height: 1.4;
-    color: #453c52;
 
+.todo_section_todo {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-left: 32px;
+  color: #453c52;
 }
-p{
-    font-size: 20px;
-    line-height: 1.2;
-    margin-left: 32px;
-    color: #453c52;
-
-}
-section{
-    margin-bottom: 32px;
-    margin-left: 32px;
-    /*background-color: rgb(185, 216, 206);
+.todo_section {
+  margin-bottom: 32px;
+  margin-left: 32px;
+  /*background-color: rgb(185, 216, 206);
     padding-left: 16px;
     padding-top: 16px ;
     padding-bottom: 16px; */
