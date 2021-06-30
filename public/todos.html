@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo Management App</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="todo-app.css" />
+</head>
+<style>
+  body {
+    background-image: url(background_img.jpg);
+    background-size: 100%, 100%;
+  }
+</style>
+
+<body>
+  <main class="todo_page_main">
+    <article>
+      <h1 class="todo_page_title">My Todo-List</h1>
+      <section class="add_todo">
+        <input class="add_todo_text" type="text" placeholder="Type New Todo Here" />
+        <input class="add_todo_date" type="date" />
+        <input class="add_todo_button" type="button" value="Add Todo" />
+      </section>
+      <section class="todo_section">
+        <div class="first_title">
+          <h2 class="todo_section_title">Due Today</h2>
+          <p class="remaining_count">0/4</p>
+        </div>
+        <div class="first_content">
+          <input class="todo_checkbox" type="checkbox" />
+          <p class="todo_text">Submit Saas 201 Project</p>
+
+          <p class="item_overdue">Overdue</p>
+          <a class="delete_todo_item" href="javascript:void(0)">
+            <img src="delete.png" alt="Delete Todo Item" />
+          </a>
+        </div>
+        <div class="second_content">
+          <input class="todo_checkbox" type="checkbox" /> Call accountant
+          <a class="delete_todo_item" href="javascript:void(0)">
+            <img src="delete.png" alt="Delete Todo Item" />
+          </a>
+        </div>
+      </section>
+      <section class="todo_section">
+        <div class="first_title">
+          <h2 class="todo_section_title">Due Tomorrow</h2>
+          <p class="remaining_count">0/4</p>
+        </div>
+        <div class="first_content">
+          <input class="todo_checkbox" type="checkbox" />
+          <p class="todo_text">Submit Saas 201 Project</p>
+          <p class="item_overdue">Overdue</p>
+          <a class="delete_todo_item" href="javascript:void(0)">
+            <img src="delete.png" alt="Delete Todo Item" />
+          </a>
+        </div>
+        <div class="second_content">
+          <input class="todo_checkbox" type="checkbox" /> Call accountant
+        </div>
+        <a class="delete_todo_item" href="javascript:void(0)">
+          <img src="delete.png" alt="Delete Todo Item" />
+        </a>
+      </section>
+      <section class="todo_section">
+        <div class="first_title">
+          <h2 class="todo_section_title">Remaining</h2>
+          <p class="remaining_count">0/4</p>
+        </div>
+        <div class="first_content">
+          <input class="todo_checkbox" type="checkbox" />
+          <p class="todo_text">Type Something</p>
+          <a class="delete_todo_item" href="javascript:void(0)">
+            <img src="delete.png" alt="Delete Todo Item" />
+          </a>
+        </div>
+        <div class="second_content">
+          <input class="todo_checkbox" type="checkbox" /> Type Something
+          <a class="delete_todo_item" href="javascript:void(0)">
+            <img src="delete.png" alt="Delete Todo Item" />
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>
