@@ -1,14 +1,9 @@
-<h1 > Rendering dynamic data inside HTML with ERB templates here *_*
- </h1>
+<h1 > Rendering dynamic data inside HTML with ERB templates here *_*</h1>
 <p> Date time now is  <%= DateTime.now.to_s(:long) %> </p>
 <h2> Total todos are <%= Todo.count %>. They are : </h2>
-
 <% Todo.all.each do |todo| %>
-
 <div style="display: flex; align-items: center">
 <p> <%= todo.todo_text %> </p>
 <p style="margin-left:30px; color: red;"> <%= todo.due_date %> </p>
 </div>
-
 <% end %>
-
