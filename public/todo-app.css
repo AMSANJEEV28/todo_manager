@@ -90,7 +90,7 @@ body {
   height: 20px;
   margin-bottom: 0px;
 }
-.todo_text{
+.todo_text {
   margin-bottom: 0px;
 }
 .item_overdue {
@@ -100,31 +100,31 @@ body {
   margin-bottom: 0px;
   height: 13px;
 }
-.first_content:hover{
+.first_content:hover {
   background-color: #f1edf7;
   height: 23px;
-  align-items:flex-end;
+  align-items: flex-end;
 }
-.delete_todo_item > img{
+.delete_todo_item > img {
   width: 16px;
 }
-.delete_todo_item{
+.delete_todo_item {
   visibility: hidden;
   margin-left: 20px;
 }
-.first_content:hover .delete_todo_item{
+.first_content:hover .delete_todo_item {
   visibility: visible;
 }
-.second_content{
+.second_content {
   display: flex;
   align-items: flex-end;
   font-size: 18px;
 }
-.second_content:hover{
+.second_content:hover {
   background-color: #f1edf7;
   height: 23px;
-  align-items:flex-end;
+  align-items: flex-end;
 }
-.second_content:hover .delete_todo_item{
+.second_content:hover .delete_todo_item {
   visibility: visible;
 }
