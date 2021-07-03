@@ -1,9 +1,37 @@
-<h1 > Rendering dynamic data inside HTML with ERB templates here *_*</h1>
-<p> Date time now is  <%= DateTime.now.to_s(:long) %> </p>
-<h2> Total todos are <%= Todo.count %>. They are : </h2>
-<% Todo.all.each do |todo| %>
-<div style="display: flex; align-items: center">
-<p> <%= todo.todo_text %> </p>
-<p style="margin-left:30px; color: red;"> <%= todo.due_date %> </p>
-</div>
-<% end %>
+<style>
+    body {
+      background-image: url(background_img.jpg);
+      background-size: 100%, 100%;
+    }
+  </style>
+
+  <main class="todo_page_main">
+      <article>
+        <h1 class="todo_page_title">My Todo-List</h1>
+        <section class="add_todo">
+          <input class="add_todo_text" type="text" placeholder="Type New Todo Here" />
+          <input class="add_todo_date" type="date" />
+          <input class="add_todo_button" type="button" value="Add Todo" />
+        </section>
+        
+        <%= render partial: "todo-section", locals: {
+                     section_title: "Overdue",
+                     todos: Todo.overdue,
+                     show_due_date: true
+                   } %>
+        <%= render partial: "todo-section", locals: {
+                     section_title: "Due Today",
+                     todos: Todo.due_today,
+                      show_due_date: false
+                   } %>        
+        
+        <%= render partial: "todo-section", locals: {
+                     section_title: "Due Later",
+                     todos: Todo.due_later,
+                      show_due_date: true
+                   } %>
+
+
+
+    </article>
+</main>

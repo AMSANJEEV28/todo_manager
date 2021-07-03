@@ -6,15 +6,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
   </head>
 
   <body>
-
-<h1 style="background-color:darkorange; color:white;"> The Todo Management App </h1>
     <%= yield %>
-<hr>
-<p style="font-size:32px;">TodoManager App (c) A M Sanjeev </p>
   </body>
 </html>
