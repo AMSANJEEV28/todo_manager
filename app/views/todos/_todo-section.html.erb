@@ -5,20 +5,20 @@
           </div>
           
           <ul>
-            <% todos.each do |todo| %>
+              <% todos.each do |todo| %>
                 <li class="first_content">
                 <label class="todo_item_container">
                 
-             <input class="todo_checkbox" type="checkbox" />
-             <%= todo.todo_text %>
+         <input class="todo_checkbox" type="checkbox" />
+               <%= todo.todo_text %>
 
-             <% if show_due_date %>
+               <% if show_due_date %>
                 <p class="todo_due_date"><%= todo.due_date.to_s(:short) %> </p>
-             <% end %>
+               <% end %>
 
-                <a class="delete_todo_item" href="javascript:void(0)">
-                    <img src="delete.png" alt="Delete Todo Item" />
-                </a>
+               <a class="delete_todo_item" href="javascript:void(0)">
+               <img src="delete.png" alt="Delete Todo Item" />
+               </a>
          </label>
         </li>
       <% end %>

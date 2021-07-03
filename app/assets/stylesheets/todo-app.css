@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   max-width: 800px;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -13,6 +13,8 @@ body {
   box-shadow: 0px 0px 5px 10px rgba(255, 255, 255, 0.658);
   border: 1px solid;
   border-color: rgb(255, 255, 255);
+  padding-top: 20px;
+  padding-bottom: 16px;
 }
 .todo_page_title {
   font-size: 48px;
@@ -50,18 +52,17 @@ body {
   padding: 6px 15px;
   font-size: 14px;
   color: black;
-  margin-right: 10px;
   border-radius: 4px;
   border: 1px solid black;
 }
 .todo_section {
-  margin: centre;
+  margin-top: 15px;
   margin-bottom: 35px;
   background-color: rgb(185, 214, 216);
   padding-left: 16px;
-  padding-top: 16px;
+  padding-top: 18px;
   padding-right: 16px;
-  padding-bottom: 10px;
+  padding-bottom: 18px;
 }
 .first_title {
   display: flex;
@@ -81,17 +82,25 @@ body {
 }
 .first_content {
   display: flex;
-  align-items: flex-end;
   font-size: 18px;
   margin-top: 15px;
+  margin-left: 15px;
+}
+.todo_item_container {
+  display: flex;
+  margin-left: 16px;
+  align-items: center;
 }
 .todo_checkbox {
-  width: 16px;
+  width: 20px;
   height: 20px;
   margin-bottom: 0px;
+  margin-right: 16px;
 }
-.todo_text {
-  margin-bottom: 0px;
+.todo_due_date {
+  font-size: 10px;
+  color: #453c52;
+  margin-left: 16px;
 }
 .first_content:hover {
   background-color: #f1edf7;
@@ -108,21 +117,19 @@ body {
 .first_content:hover .delete_todo_item {
   visibility: visible;
 }
-.second_content {
-  display: flex;
-  align-items: flex-end;
-  font-size: 18px;
+.logo > img {
+  height: 50px;
 }
-.second_content:hover {
-  background-color: #f1edf7;
-  height: 23px;
-  align-items: flex-end;
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  background: rgba(255, 255, 255, 0.116);
 }
-.second_content:hover .delete_todo_item {
-  visibility: visible;
-}
-
-.todo_due_date {
-  font-size: 10px;
-  color: #453c52;
+.footer {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  background: rgba(255, 255, 255, 0.363);
+  font-size: 25px;
 }
