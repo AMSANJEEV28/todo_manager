@@ -16,7 +16,7 @@
         
         <%= render partial: "todo-section", locals: {
                      section_title: "Overdue",
-                     todos: Todo.overdue.where(completed: fasle),
+                     todos: Todo.overdue.where(completed: false),
                      show_due_date: true,
                    } %>
         <%= render partial: "todo-section", locals: {
