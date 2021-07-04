@@ -133,3 +133,6 @@ body {
   background: rgba(255, 255, 255, 0.363);
   font-size: 25px;
 }
+.todo_completed {
+  text-decoration: line-through;
+}
