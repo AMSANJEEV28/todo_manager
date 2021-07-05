@@ -8,11 +8,15 @@
   <main class="todo_page_main">
       <article>
         <h1 class="todo_page_title">My Todo-List</h1>
-        <section class="add_todo">
-          <input class="add_todo_text" type="text" placeholder="Type New Todo Here" />
-          <input class="add_todo_date" type="date" />
-          <input class="add_todo_button" type="button" value="Add Todo" />
-        </section>
+        <form class="add_todo"
+               action="/todos"
+               method="POST" >
+
+          <input class="add_todo_text" type="text" placeholder="Type New Todo Here" name="todo_text" />
+          <input class="add_todo_date" type="date" name="due_date" />
+          
+          <input class="add_todo_button" type="submit" value="Add Todo" />
+        </form>
         
         <%= render partial: "todo-section", locals: {
                      section_title: "Overdue",
