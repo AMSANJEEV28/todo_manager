@@ -15,6 +15,8 @@ body {
   border-color: rgb(255, 255, 255);
   padding-top: 20px;
   padding-bottom: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .todo_page_title {
   font-size: 48px;
