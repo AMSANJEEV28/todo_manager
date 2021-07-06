@@ -3,7 +3,7 @@ class TodosController < ApplicationController
 
   def index
     # render plain: Todo.order(:due_date).map { |todo| todo.to_pleasant_string }.join("\n")
-  render "index"
+    render "index"
   end
 
   def show
@@ -21,7 +21,7 @@ class TodosController < ApplicationController
       due_date: due_date,
       completed: false,
     )
-    
+
     redirect_to todos_path
   end
 
@@ -31,6 +31,13 @@ class TodosController < ApplicationController
     todo = Todo.find(id)
     todo.completed = completed
     todo.save!
+    redirect_to todos_path
+  end
+
+  def destroy
+    id = params[:id]
+    todo = Todo.find(id)
+    todo.destroy
     redirect_to todos_path
   end
 end
