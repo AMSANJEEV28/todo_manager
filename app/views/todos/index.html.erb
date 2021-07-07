@@ -15,8 +15,13 @@
                             placeholder: "Type New Todo Here",
                             class: "add_todo_text"%>
 
-          <input class="add_todo_date" type="date" name="due_date" />       
-          <input class="add_todo_button" type="submit" value="Add Todo" />
+        <%= date_field_tag "due_date", nil,
+                            required: true,
+                            class:"add_todo_date"%>
+
+        <%= submit_tag nil, class:"add_todo_button" 
+                            placeholder: "Add Todo"%>
+
         <% end %>
 
         <%= render partial: "todo-section", locals: {
