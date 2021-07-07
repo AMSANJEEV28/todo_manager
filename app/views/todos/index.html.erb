@@ -9,7 +9,12 @@
       <article>
         <h1 class="todo_page_title">My Todo-List</h1>
         <%= form_with(url:"/todos", method: "post", class: "add_todo") do %>
-          <input class="add_todo_text" type="text" placeholder="Type New Todo Here" name="todo_text" />
+        
+        <%= text_field_tag "todo_text", nil,
+                            required: true,
+                            placeholder: "Type New Todo Here",
+                            class: "add_todo_text"%>
+
           <input class="add_todo_date" type="date" name="due_date" />       
           <input class="add_todo_button" type="submit" value="Add Todo" />
         <% end %>
