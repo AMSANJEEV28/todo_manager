@@ -10,13 +10,13 @@
       <li class="first_content">
         <label class="todo_item_container">
           <%= form_with(url: "/todos/#{todo.id}" , method: "put") do %>
-                <input class="todo_checkbox" 
-                    name="completed" 
-                    type="checkbox"
-                    <%= todo.completed ? "checked" : "" %>
-                    onclick="this.form.submit()"
-              />
-        <% end %>
+
+          <%= check_box_tag ("completed", nil,
+                            todo.completed,
+                            class:"todo_checkbox",
+                            onclick:"this.form.submit()") %>
+                  
+          <% end %>
             
             <p class = <%= todo.completed ? "todo_completed" : "" %> >
               <%= todo.todo_text %>
