@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 def new
   render "users/new"
+  end
 
   def index
     render plain: User.all.map { |user| user.to_user_list }.join("\n")
