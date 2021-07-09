@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :todos
   resources :users
   post "users/login"
+  get "/signin" => "sessions#new"
 end
