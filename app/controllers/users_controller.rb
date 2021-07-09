@@ -10,15 +10,17 @@ class UsersController < ApplicationController
   end
 
   def create
-    name = params[:name]
+    first_name = params[:first_name]
+    last_name = params[:last_name]
     email = params[:email]
-    password = params[:password]
+
     new_user = User.create!(
-      user: name,
+      first_name: first_name,
+      last_name: last_name
       email: email,
-      password: password,
+      password_digest: password_digest,
     )
-    render plain: "Hello New User !!  Your user id is #{new_user.id} with user name #{name}"
+    redirect_to  "/"
   end
 
   def login
