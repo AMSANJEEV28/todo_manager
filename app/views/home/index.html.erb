@@ -1,3 +1,9 @@
-<p> Welcome to the Todo Homepage </p>
+<h1 class="home_title"> Welcome to the Todo Homepage </h1>
 
-<p> New User ? SignUp Here <p>
+<h3 class="home_authenticate"> 
+    New User ? <%= link_to "sign up here", new_user_path %> 
+</h3>
+
+<h3 class="home_authenticate"> 
+    Existing User ? <%= link_to "sign in here", new_sessions_path %> 
+</h3>
