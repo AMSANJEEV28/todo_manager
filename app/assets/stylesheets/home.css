@@ -7,3 +7,10 @@
   font-size: 25px;
   margin-bottom: 20px;
 }
+
+.user_header{
+  padding: 10px;
+  background-color: lavender;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

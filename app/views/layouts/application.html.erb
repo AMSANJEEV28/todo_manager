@@ -11,12 +11,12 @@
   </head>
 
   <body>
-
-    <div class="logo" >
-      <img src="logo.png" alt="PupilFirst School Logo">
-    </div>
+<% if @current_user %>
+      <p class="user_header" >
+       Hello !!  <%= @current_user.first_name %>
+      </p>
+    <% end %>
 
     <%= yield %>
-
   </body>
 </html>
