@@ -1,4 +1,8 @@
 class Todo < ActiveRecord::Base
+  validates :todo_text, presence: true
+  validates :todo_text, length: { minimum: 3 }
+  validates :due_date, presence: true
+
   belongs_to :user
 
   def due_today?
