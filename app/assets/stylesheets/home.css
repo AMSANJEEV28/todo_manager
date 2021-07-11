@@ -16,3 +16,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+.flash_error{
+  color: darkred;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
