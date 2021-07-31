@@ -1,3 +1,8 @@
+.user_content{
+  box-shadow: 0px 0px 5px 10px rgba(255, 255, 255, 0.658);
+  border: 1px solid;
+  border-color: rgb(255, 255, 255);
+}
 .new_user_title {
   margin-bottom: 40px;
   font-size: 30px;
