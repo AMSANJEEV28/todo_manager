@@ -1,4 +1,11 @@
-<p class="new_user_title"> Welcome New User </p>
+<style>
+    body {
+      background-image: url(background_img1.jpg);
+      background-size: 100%, 100%;
+    }
+  </style>
+  <div class="new_user_content">
+  <p class="new_user_title"> Welcome New User </p>
 
 <section class = "users_new">
   <%= form_with url: users_path do |form| %>
@@ -29,3 +36,4 @@
 
   <% end %>
 </section>
+</div>
