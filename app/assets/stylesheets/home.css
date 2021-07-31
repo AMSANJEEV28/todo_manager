@@ -1,11 +1,13 @@
 .home_title {
   font-size: 25px;
   margin-bottom: 30px;
+  color: white;
 }
 
 .home_authenticate {
   font-size: 25px;
   margin-bottom: 20px;
+  color:white;
 }
 
 .user_header{
